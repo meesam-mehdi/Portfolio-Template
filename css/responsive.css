@@ -1,0 +1,525 @@
+@media (max-width: 360px) {
+    nav .navbar {
+        font-size: 15px;
+        box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    }
+    nav .navbar .left {
+        padding: 5px;
+        margin: 5px 5px;
+    }
+    nav .navbar .right {
+        margin: 5px 5px;
+    }    
+    .navbar .right ul a {
+        display: none;
+    }
+    section .info {
+        margin: 0px 15px;
+        margin-top: 70px;
+        padding: 20px;
+    }
+    section .info .top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0%;
+    }
+    section #info #image img {
+        width: 150px;
+        border-radius: 50%;
+    }
+    section #info .details h1 {
+        font-size: 20px;
+    }
+    section #info .details em {
+        font-size: 12px;
+    }
+    section #info .details a {
+        font-size: 9px;
+        border-radius: 15px;
+    }
+    section #info .bottom #social h2 {
+        font-size: 12px;
+    }
+    section #info .bottom #social a {
+        height: 20px;
+        width: 20px;
+        margin: 3px 3px;
+    }
+    section #info .bottom #social .icons .fa-brands {
+        font-size: 15px;
+        line-height: 20px;
+    }       
+    .dark-mode #info .bottom #social .icons .fa-brands {
+        color: whitesmoke;
+    }
+    section #about {
+        margin: 0px 15px;
+        margin-top: 15px;
+        padding: 20px;
+    }
+    section #about h1 {
+        font-size: 20px;
+    }
+    section #about p {
+        font-size: 13px;
+    }
+    section #achievement {
+        margin: 0px 15px;
+        margin-top: 15px;
+        padding: 20px;
+    }
+    section #achievement h1 {
+        font-size: 20px;
+    }
+    section #achievement .img-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(199px, 1fr));
+    }
+    section #contact-container {
+        margin: 15px 15px 20px 15px;
+        padding: 20px;
+    }
+    section .contact-left {
+        gap: 10px;
+    }
+    section .contact-left-title h2 {
+        font-size: 20px;
+    }
+    section .contact-left-title hr {
+        height: 3px;
+    }
+    section .contact-inputs {
+        width: 200px;
+        height: 20px;
+    }    
+    section .contact-left textarea {
+        height: 100px;
+    }
+    section .contact-right img {
+        display: none;
+    }
+    section footer {
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+    nav .navbar {
+        font-size: 20px;
+    }
+    nav .navbar .left {
+        padding: 5px;
+        margin: 5px 5px;
+    }
+    nav .navbar .right {
+        margin: 5px 5px;
+    }
+    nav .navbar .right ul a {
+        display: none;
+    }
+    section .info {
+        margin: 0px 25px;
+        margin-top: 70px;
+        padding: 30px;
+    }
+    section .info .top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0%;
+    }
+    section #info #image img {
+        width: 160px;
+        border-radius: 50%;
+    }
+    section #info .details h1 {
+        font-size: 28px;
+    }
+    section #info .details em {
+        font-size: 15px;
+    }
+    section #info .details a {
+        font-size: 10px;
+        border-radius: 15px;
+    }
+    section #info .bottom #social h2 {
+        font-size: 13px;
+    }
+    section #info .bottom #social a {
+        height: 30px;
+        width: 30px;
+        margin: 5px 5px;
+        border-radius: 1px 10px 1px 10px;
+        color: black;
+    }
+    section #info .bottom #social .icons .fa-brands {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    section #info .bottom #social .icons .fa-brands:hover {
+        font-size: 18px;
+    }       
+    .dark-mode #info .bottom #social .icons .fa-brands {
+        color: whitesmoke;
+    }    
+    section #about {
+        margin: 0px 25px;
+        margin-top: 15px;
+        padding: 30px;
+    }
+    section #about h1 {
+        font-size: 28px;
+    }
+    section #about p {
+        font-size: 13px;
+    }
+    section #achievement {
+        margin: 0px 25px;
+        margin-top: 15px;
+        padding: 30px;
+    }
+    section #achievement h1 {
+        font-size: 28px;
+    }
+    section #achievement .img-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(199px, 1fr));
+    }
+    section #contact-container {
+        margin: 15px 25px 30px 25px;
+        padding: 30px;
+    }
+    section .contact-left {
+        gap: 10px;
+    }
+    section .contact-left-title h2 {
+        font-size: 20px;
+    }
+    section .contact-left-title hr {
+        height: 3px;
+    }
+    section .contact-inputs {
+        width: 200px;
+        height: 20px;
+    }
+    section .contact-left textarea {
+        height: 100px;
+    }
+    section .contact-right img {
+        display: none;
+    }
+    section footer {
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 617px) {
+    nav .navbar {
+        font-size: 22px;
+    }
+    nav .navbar .left {
+        padding: 5px;
+        margin: 5px 5px;
+    }
+    nav .navbar .right {
+        margin: 5px 5px;
+    }
+    .navbar .right ul a {
+        display: none;
+    }
+    section .info {
+        margin: 0px 20px;
+        margin-top: 70px;
+        padding: 20px;
+    }
+    section .info .top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section #info #image img {
+        width: 200px;
+        border-radius: 50%;
+    }
+    section #info .details h1 {
+        font-size: 28px;
+    }
+    section #info .details em {
+        font-size: 15px;
+    }
+    section #info .details a {
+        font-size: 10px;
+        border-radius: 15px;
+    }
+    section #info .bottom #social h2 {
+        font-size: 16px;
+    }
+    section #info .bottom #social a {
+        height: 30px;
+        width: 30px;
+        margin: 5px 5px;
+        border-radius: 1px 10px 1px 10px;
+        color: black;
+    }
+    section #info .bottom #social .icons .fa-brands {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    section #info .bottom #social .icons .fa-brands:hover {
+        font-size: 18px;
+    }       
+    .dark-mode #info .bottom #social .icons .fa-brands {
+        color: whitesmoke;
+    }
+    section #about {
+        margin: 0px 20px;
+        margin-top: 15px;
+        padding: 30px;
+    }
+    section #about h1 {
+        font-size: 28px;
+    }
+    section #about p {
+        font-size: 13px;
+    }
+    section #achievement {
+        margin: 0px 20px;
+        margin-top: 15px;
+        padding: 30px;
+    }
+    section #achievement h1 {
+        font-size: 28px;
+    }
+    section #achievement .img-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(199px, 1fr));
+    }
+    section #contact-container {
+        margin: 15px 20px 30px 20px;
+        padding: 30px;
+    }
+    section .contact-left {
+        gap: 10px;
+    }
+    section .contact-left-title h2 {
+        font-size: 20px;
+    }
+    section .contact-left-title hr {
+        height: 3px;
+    }
+    section .contact-inputs {
+        width: 200px;
+        height: 20px;
+    }
+    section .contact-left textarea {
+        height: 100px;
+    }
+    section .contact-right img {
+        display: none;
+    }
+    section footer {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 617px) and (max-width: 768px) {
+    .navbar .right ul a {
+        display: none;
+    }
+    section .info {
+        margin: 0px 40px;
+        margin-top: 100px;
+        padding: 30px;
+    }
+    section #info #image img {
+        width: 150px;
+        border-radius: 50%;
+    }
+    section #info .details h1 {
+        font-size: 24px;
+    }
+    section #info .details em {
+        font-size: 12px;
+    }
+    section #info .details a {
+        font-size: 10px;
+        border-radius: 15px;
+    }
+    section #info .bottom #social a {
+        color: black;
+    }
+    section #info .bottom #social .icons .fa-brands:hover {
+        font-size: 30px;
+    }   
+    .dark-mode #info .bottom #social .icons .fa-brands {
+        color: whitesmoke;
+    }
+    section #about {
+        margin: 0px 40px;
+        margin-top: 15px;
+    }
+    section #about h1 {
+        font-size: 27px;
+    }
+    section #about p {
+        font-size: 12px;
+    }
+    section #achievement {
+        margin: 0px 40px;
+        margin-top: 15px;
+    }
+    section #achievement h1 {
+        font-size: 27px;
+    }
+    section #contact-container {
+        margin: 15px 40px 30px 40px;
+    }
+    section .contact-left {
+        gap: 10px;
+    }
+    section .contact-left-title h2 {
+        font-size: 20px;
+    }
+    section .contact-left-title hr {
+        height: 3px;
+    }
+    section .contact-inputs {
+        width: 200px;
+        height: 20px;
+    }
+    section .contact-left textarea {
+        height: 100px;
+    }
+    section .contact-right img {
+        width: 180px;
+    }
+    section footer {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        width: 100%;
+    }
+    .navbar .left {
+        margin: 5px 5px;
+        font-size: 18px;
+    }
+    .navbar .right {
+        margin: 5px 5px;
+        font-size: 18px;
+    }
+    section .info {
+        margin: 0px 50px;
+        margin-top: 100px;
+    }
+    section #info #image img {
+        width: 170px;
+        border-radius: 50%;
+    }
+    section #info .details h1 {
+        font-size: 35px;
+    }
+    section #info .details em {
+        font-size: 18px;
+    }
+    section #info .details a {
+        font-size: 16px;
+        border-radius: 15px;
+    }
+    section #info .bottom #social a {
+        color: black;
+    }
+    section #info .bottom #social .icons .fa-brands:hover {
+        font-size: 30px;
+    }       
+    .dark-mode #info .bottom #social .icons .fa-brands {
+        color: whitesmoke;
+    }
+    section #about {
+        margin: 0px 50px;
+        margin-top: 20px;
+    }
+    section #about h1 {
+        font-size: 30px;
+    }
+    section #about p {
+        font-size: 15px;
+    }
+    section #achievement {
+        margin: 0px 50px;
+        margin-top: 20px;
+    }
+    section #achievement h1 {
+        font-size: 30px;
+    }
+    section #contact-container {
+        margin: 20px 50px 35px 50px;
+    }
+    section .contact-left-title h2 {
+        font-size: 23px;
+    }
+    section .contact-right img {
+        width: 200px;
+    }
+    section footer {
+        font-size: 11px;
+    }   
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .navbar {
+        width: 100%;
+    }
+    .navbar .left {
+        margin: 5px 5px;
+        font-size: 18px;
+    }
+    .navbar .right {
+        margin: 5px 5px;
+        font-size: 18px;
+    }
+    section .info {
+        margin: 0px 150px;
+        margin-top: 150px;
+    }
+    section #info #image img {
+        width: 200px;
+        border-radius: 50%;
+    }
+    section #info .details h1 {
+        font-size: 40px;
+    }
+    section #info .details em {
+        font-size: 20px;
+    }
+    section #info .details a {
+        font-size: 18px;
+        border-radius: 15px;
+    }
+    section #about {
+        margin: 0px 150px;
+        margin-top: 25px;
+    }
+    section #about h1 {
+        font-size: 32px;
+    }
+    section #about p {
+        font-size: 16px;
+    }
+    section #achievement {
+        margin: 0px 150px;
+        margin-top: 25px;
+    }
+    section #achievement h1 {
+        font-size: 32px;
+    }
+    section #contact-container {
+        margin: 25px 150px 40px 150px;
+    }
+    section .contact-left-title h2 {
+        font-size: 25px;
+    }
+    section footer {
+        font-size: 12px;
+    }
+}

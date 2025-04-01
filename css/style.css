@@ -1,0 +1,570 @@
+* {
+    margin: 0%;
+    scroll-behavior: smooth;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+body {
+    margin: 0%;
+    /* background: rgb(20, 20, 20); */
+    background: #e8e9da00;
+}
+
+/* Dark Mode Section */
+.dark-mode {
+    background-color: rgb(20, 20, 20);
+    /* color: white; */
+}
+
+.dark-mode .navbar {
+    box-shadow: 0px 0px 25px whitesmoke;
+}
+
+.dark-mode .navbar .right ul a {
+    color: rgb(20, 20, 20);
+}
+
+.dark-mode .navbar .right ul a:hover:hover {
+    text-decoration: underline rgb(0, 0, 0);
+}
+
+.dark-mode #info {
+    background-color: rgb(25, 25, 25);
+    box-shadow: 0px 0px 5px whitesmoke;
+}
+
+.dark-mode #info #image img {
+    border-color: #7c39ff;
+    box-shadow: 0 0 10px white;
+}
+
+.dark-mode #info .details h1 {
+    color: white;
+}
+
+.dark-mode #info .details em {
+    color: white;
+}
+
+.dark-mode #info .details a {
+    color: white;
+    border: 2px solid whitesmoke;
+}
+
+.dark-mode #info .details a:hover {
+    background-color: royalblue;
+    box-shadow: 0px 0px 10px white;
+}
+
+.dark-mode #info hr {
+    height: 1.5px;
+    background-color: whitesmoke;
+}
+
+.dark-mode #info .bottom #social h2 {
+    color: white;
+}
+
+.dark-mode #info .bottom #social .icons .fa-brands {
+    color: white;
+}
+
+.dark-mode #about {
+    background-color: rgb(25, 25, 25);
+    box-shadow: 0px 0px 5px whitesmoke;
+}
+
+.dark-mode #about h1 {
+    color: white;
+}
+
+.dark-mode #about p {
+    color: rgb(202, 192, 192);
+}
+
+.dark-mode #achievement {
+    background-color: rgb(25, 25, 25);
+    box-shadow: 0px 0px 5px whitesmoke;
+}
+
+.dark-mode #achievement h1 {
+    color: white;
+}
+
+.dark-mode #achievement .img-gallery img {
+    box-shadow: 0 0 5px white;
+}
+
+.dark-mode #contact-container {
+    background-color: rgb(25, 25, 25);
+    box-shadow: 0px 0px 5px whitesmoke;
+}
+.dark-mode footer {
+    color: #a6a6a6;
+}
+
+/* Navigation Bar Section */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #c1a2ff, #7c39ff);
+    box-shadow: 0px 0px 25px rgb(0, 0, 0);
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 15;
+
+    transition: all 0.9s ease-in-out;
+}
+
+.navbar .left {
+    padding: 10px;
+    margin: 0px 30px;
+    border-radius: 10px;
+    font-family: "Orelega One", serif;
+    cursor: default;    
+}
+
+.navbar .left img {
+    width: 10%;
+}
+
+.navbar .right {
+    margin: 10px 30px;
+    display: flex;
+}
+
+.navbar .right ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px 35px;
+    
+
+}
+
+.navbar .right ul a {
+    text-decoration: none;
+    padding: 5px 5px;
+    margin: 0px 5px;
+    /* color: rgb(37, 35, 35); */
+    color: whitesmoke;
+    font-weight: 400;
+    transition: all 0.9s ease-in-out;
+}
+
+.navbar .right ul a:hover {
+    text-decoration: underline whitesmoke;
+}
+
+/* Dark Mode Button */
+.switch {
+    display: block;
+    --width-of-switch: 3.0em;
+    --height-of-switch: 1.0em;
+    /* size of sliding icon -- sun and moon */
+    --size-of-icon: 0.7em;
+    /* it is like a inline-padding of switch */
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+    /* margin: 10px 0px; */
+    padding: 0%;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f4f4f5;
+    transition: .5s;
+    border-radius: 30px;
+    margin: 0px 2px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon, 0.7em);
+    width: var(--size-of-icon, 0.7em);
+    border-radius: 20px;
+    left: var(--slider-offset, 0.3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+    ;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #303136;
+}
+
+input:checked+.slider:before {
+    left: calc(100% - (var(--size-of-icon, 0.7em) + var(--slider-offset, 0.3em)));
+    background: #303136;
+    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+
+/* Profile Section */
+.info {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    margin: 0px 200px;
+    margin-top: 150px;
+    border-radius: 3px;
+    padding: 50px;
+    background: #e8e9da00;
+    transition: all 0.9s ease-in-out;
+}
+
+#info .top {
+    display: flex;    
+    padding: 0px 20px;
+    margin-bottom: 50px;
+}
+
+#info #image img {
+    width: 250px;
+    border-radius: 50%;    
+    box-shadow: 5px 2px 15px rgb(0, 0, 0);
+    transition: all 0.9s ease-in-out;
+}
+
+
+#info .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    transition: all 0.9s ease-in-out;
+
+}
+
+#info .details h1 {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: "Orelega One", serif;
+    margin: 20px 0px;
+
+    transition: all 0.9s ease-in-out;
+}
+
+#info .details em {
+    font-size: 18px;
+    margin: 0px 10px;
+    margin-bottom: 5px;
+    transition: all 0.9s ease-in-out;
+}
+
+#info .details a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    
+    transition: all 0.5s ease-in-out;
+}
+
+.details a:hover {
+    background-color: royalblue;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    width: 100%;
+    transition: all 0.9s ease-in-out;
+}
+
+/* Social Section */
+#info .bottom #social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin-top: 30px;
+    transition: all 0.9s ease-in-out;
+}
+
+#info .bottom #social h2 {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    transition: all 0.9s ease-in-out;
+}
+
+#info .bottom #social .icons {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    transition: all 0.9s ease-in-out;
+}
+
+#info .bottom #social a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    height: 50px;
+    width: 50px;
+    margin: 10px 10px;
+    position: relative;
+    border-radius: 1px 20px 1px 20px;
+    transition: all 0.9s ease-in-out;  
+}
+
+#info .bottom #social .icons .fa-brands {
+    font-size: 30px;
+    line-height: 50px;
+    transition: 0.2s;
+}
+
+#info .bottom #social .icons .fa-brands:hover {
+    font-size: 35px;    
+}
+
+/* Bio Section */
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: left;
+    text-align: left;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    margin: 0px 200px;
+    margin-top: 30px;
+    border-radius: 3px;
+    padding: 50px 60px;
+    background: #e8e9da00;
+    transition: all 0.9s ease-in-out;
+}
+
+#about h1 {
+    font-size: 40px;
+    font-weight: 300;
+    font-family: "Orelega One", serif;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    transition: all 0.9s ease-in-out;
+}
+
+#about p {
+    font-size: 18px;
+    color: rgba(51, 51, 51, 1);
+    transition: all 0.9s ease-in-out;
+}
+
+/* Achievements */
+#achievement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    margin: 0px 200px;
+    margin-top: 30px;
+    border-radius: 3px;
+    padding: 50px 0px;
+    background: #e8e9da00;
+    transition: all 0.9s ease-in-out;
+}
+
+#achievement h1 {
+    font-size: 40px;
+    font-weight: 300;
+    font-family: "Orelega One", serif;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    transition: all 0.9s ease-in-out;
+}
+
+#achievement .img-gallery {
+    width: 80%;
+    margin: 30px auto 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    transition: all 0.9s ease-in-out;
+}
+
+#achievement .img-gallery img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.9s ease-in-out;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+#achievement .img-gallery img:hover {
+    transform: scale(1.05);
+}
+
+#achievement .full-img {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    transition: all 0.9s ease-in-out;
+}
+
+#achievement .full-img img {
+    width: 90%;
+    max-width: 600px;
+}
+
+#achievement .full-img span {
+    position: absolute;
+    top: 8%;
+    right: 6%;
+    color: #eaeaea;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/* Contact Section */
+#contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to left, #7c39ff, #c1a2ff);
+    margin: 30px 200px 50px 200px;
+    padding: 50px;
+    box-shadow: 0px 0px 5px whitesmoke;
+    border-radius: 3px;
+    transition: all 0.9s ease-in-out;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+}
+
+.contact-left-title h2 {
+    font-weight: 400;
+    font-family: "Orelega One", serif;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #7c39ff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-inputs {
+    width: 300px;
+    height: 30px;
+    border-color: #7c39ff;
+    padding-left: 15px;
+    font-weight: 500;
+    color: #303136;
+    border-radius: 15px;
+}
+
+.contact-left textarea {
+    height: 100px;
+    padding-top: 10px;
+    border-radius: 10px;
+    border-color: #7c39ff;
+    border: 2px solid #7c39ff;
+    resize: none;
+}
+
+.contact-inputs:focus {
+    border: 2px solid salmon;
+}
+
+.contact-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 20px;
+    color: whitesmoke;
+    gap: 10px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+
+    transition: all 0.9s ease-in-out;
+}
+
+.contact-left button img {
+    height: 15px;
+}
+
+.contact-left button:hover {
+    box-shadow: 0px 0px 15px #7c39ff;
+}
+
+.contact-right img {
+    width: 300px;
+}
+
+footer {
+    text-align: center;
+    color: rgb(40, 40, 40);
+    margin: 10px auto 5px;
+    font-size: 14px;
+    transition: all 0.9s ease-in-out;
+}
+
+/* ---------- Custom Scrollbar ---------- */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#7c39ff, #c1a2ff);
+}
